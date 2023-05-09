@@ -1,5 +1,10 @@
 import React from 'react'
 
+// IMPORT CSS 
+import './css/reset.css';
+import './css/app.scss';
+
+
 const App = () => {
   return (
     <div className='container'>
@@ -8,7 +13,7 @@ const App = () => {
 
           </div>
           <div className="header__right-screen">
-            
+
           </div>
         </header>
         <main>

@@ -1,0 +1,24 @@
+.container {
+
+
+  
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+    &__left-screen {
+        flex: 1;
+        height: 50vh;
+        background-color: black;
+    }
+
+    
+    &__right-screen {
+        flex: 1;
+        height: 50vh;
+    }
+}
