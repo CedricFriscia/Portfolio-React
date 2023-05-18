@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <div className="landing">
       <Navbar />
-      <main className="landing__main">
+      <main className="landing__main" id="home">
         <section className="landing__presentation">
           <h2>Front-End React Developer</h2>
           <aside>
