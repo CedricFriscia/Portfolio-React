@@ -1,5 +1,8 @@
 import React from "react";
 
+// Import Components
+import Stack from "../../Components/Satck";
+
 // Import CSS
 import "./styles.scss";
 
@@ -60,7 +63,7 @@ const Landing = () => {
 
       <footer>
         <section className="landing__stack">
-          <h3>Stack Technique</h3>
+          <Stack />
         </section>
       </footer>
     </div>

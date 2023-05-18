@@ -36,9 +36,9 @@
 
   &__main {
     display: flex;
-    height: 60vh;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 60vh;
   }
 
   &__presentation h2 {
@@ -66,5 +66,17 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+  }
+
+  &__stack {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__stack h3 {
+    font-weight: bold;
   }
 }
