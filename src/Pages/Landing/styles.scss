@@ -1,0 +1,70 @@
+.landing {
+  height: 100vh;
+  width: 100vw;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border: 3px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &__navbar ul {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    font-weight: bold;
+    height: 6vh;
+  }
+
+  &__navbar ul li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+
+  &__main {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__presentation h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    width: 30rem;
+    font-weight: 1000;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+
+  &__presentation aside {
+    width: 25rem;
+    padding-bottom: 15px;
+  }
+
+  &__contact-linkedin {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  &__contact-github {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
