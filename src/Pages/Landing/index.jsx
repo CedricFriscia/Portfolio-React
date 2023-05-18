@@ -1,6 +1,7 @@
 import React from "react";
 
 // Import Components
+import Navbar from "../../Components/Navbar";
 import Stack from "../../Components/Satck";
 
 // Import CSS
@@ -9,17 +10,7 @@ import "./styles.scss";
 const Landing = () => {
   return (
     <div className="landing">
-      <header className="landing__header">
-        <h1 className="landing__logo">Cedric Friscia </h1>
-        <nav className="landing__navbar">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Project</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
       <main className="landing__main">
         <section className="landing__presentation">
           <h2>Front-End React Developer</h2>
