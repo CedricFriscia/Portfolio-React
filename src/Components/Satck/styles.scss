@@ -1,5 +1,24 @@
-.stack__container {
+.stack {
   display: flex;
-  gap: 30px;
-  font-size: 2rem;
+  flex-direction: column;
+
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
 }

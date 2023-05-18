@@ -1,0 +1,39 @@
+.about {
+  width: auto;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  &__image {
+    background-image: url("../../assets/img/headphones-gc4249b19a_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 350px;
+    border-radius: 14px;
+  }
+
+  &__me {
+    text-align: end;
+    background-color: #588cda;
+    font-size: 2rem;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+  &__information {
+    width: 25rem;
+  }
+
+  &__information h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
