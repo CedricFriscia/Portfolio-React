@@ -1,8 +1,9 @@
-import React from "react";
-
+import React, { useState } from "react";
 import "./styles.scss";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="navbar">
       <header className="navbar__header">
@@ -23,6 +24,15 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+        <img
+          className="navbar__burger"
+          src={
+            isOpen
+              ? "src/assets/img/icons8-close-50.png"
+              : "src/assets/img/icons8-menu-50.png"
+          }
+          alt="Menu burger"
+        />
       </header>
     </div>
   );

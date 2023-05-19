@@ -37,3 +37,14 @@
     padding-top: 15px;
   }
 }
+
+@media (max-width: 767px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      width: 300px;
+    }
+  }
+}

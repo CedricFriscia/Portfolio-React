@@ -45,3 +45,22 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 767px) {
+  .landing {
+    &__presentation h2 {
+      font-size: 2rem;
+      letter-spacing: 5px;
+      width: 20rem;
+      font-weight: 1000;
+      padding-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    &__main {
+      display: flex;
+      margin: 50px;
+      flex-direction: column;
+    }
+  }
+}
