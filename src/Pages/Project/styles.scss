@@ -1,0 +1,19 @@
+.project {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  height: 100vh;
+  width: 70vw;
+  margin: auto;
+
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    height: fit-content;
+    background-color: #cabf9d;
+    font-size: 2rem;
+    border-radius: 4px;
+    padding: 5px;
+  }
+}
