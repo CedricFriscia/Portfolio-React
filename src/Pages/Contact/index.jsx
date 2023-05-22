@@ -1,40 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "./styles.scss";
 
-const Contact = () => {
+const CommentForm = () => {
   return (
-    <div className="contact" id="contact">
+    <div className="contact">
       <h3 className="contact__title">Contact me</h3>
       <form
-        className="contact__form"
+        className="colorful-form"
         action="https://formsubmit.co/cedricfriscia@gmail.com"
         method="POST"
       >
-        {/* <input
-          type="hidden"
-          name="_next"
-          value="https://yourdomain.co/thanks.html"
-        /> */}
-        <input
-          className="contact__input"
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          required
-        />
-        <textarea
-          className="contact__input-text"
-          name="name"
-          required
-          placeholder="Write your message here"
-        />
-
-        <button className="contact__button" type="submit">
-          Send
+        <div className="form-group">
+          <label className="form-label" htmlFor="email">
+            Email:
+          </label>
+          <input
+            required
+            placeholder="Enter your email"
+            className="form-input"
+            name="email"
+            id="email"
+            type="email"
+          />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="message">
+            Message:
+          </label>
+          <textarea
+            required
+            placeholder="Enter your message"
+            className="form-input"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+        <button className="form-button" type="submit">
+          Submit
         </button>
       </form>
     </div>
   );
 };
 
-export default Contact;
+export default CommentForm;
