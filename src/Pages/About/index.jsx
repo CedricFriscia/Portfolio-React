@@ -4,9 +4,9 @@ import "./styles.scss";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <section className="about__information">
-        <a id="about" className="about__me" href="#">
+        <a className="about__me" href="#">
           About me
         </a>
         <h3>Un Developpeur Front-End Junior passioné .</h3>

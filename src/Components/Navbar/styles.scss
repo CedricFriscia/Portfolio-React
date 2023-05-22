@@ -6,6 +6,21 @@
   z-index: 999;
   background-color: white;
 
+  &__mobile {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__mobile li {
+    padding: 15px;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;

@@ -1,20 +1,25 @@
 import React, { useState } from "react";
 import "./styles.scss";
-import Modal from "../Modal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isIconClose, setIsIconClose] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
     setIsIconClose(!isIconClose);
+    setShowModal(!showModal);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   return (
     <div className="navbar">
       <header className="navbar__header">
-        <h1 className="navbar__logo">Cedric Friscia </h1>
+        <h1 className="navbar__logo">Cedric Friscia</h1>
         <nav className="navbar__desktop">
           <ul>
             <li>
@@ -31,19 +36,41 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <img
-          onClick={handleClick}
-          className="navbar__burger"
-          src={
-            isIconClose
-              ? "/src/assets/img/icons8-close-50.png"
-              : "/src/assets/img/icons8-menu-50.png"
-          }
-          alt="Menu burger"
-        />
+        <button className="navbar__burger" onClick={handleClick}>
+          {isIconClose ? (
+            <img src="/src/assets/img/icons8-close-50.png" alt="Close" />
+          ) : (
+            <img src="/src/assets/img/icons8-menu-50.png" alt="Menu" />
+          )}
+        </button>
       </header>
 
-      {isOpen && <Modal onClose={() => setIsOpen(false)}></Modal>}
+      {showModal && (
+        <nav className="navbar__mobile">
+          <ul>
+            <li>
+              <a href="#home" onClick={handleCloseModal}>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={handleCloseModal}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#project" onClick={handleCloseModal}>
+                Project
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={handleCloseModal}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </div>
   );
 };
