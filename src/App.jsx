@@ -6,10 +6,6 @@ import About from "./Pages/About";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
 
-// IMPORT CSS
-import "./css/reset.css";
-import "./css/app.scss";
-
 const App = () => {
   return (
     <div className="container">
@@ -22,3 +18,7 @@ const App = () => {
 };
 
 export default App;
+
+// IMPORT CSS
+import "./css/reset.css";
+import "./css/app.scss";

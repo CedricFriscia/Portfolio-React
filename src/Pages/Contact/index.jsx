@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const CommentForm = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h3 className="contact__title">Contact me</h3>
       <form
         className="colorful-form"
