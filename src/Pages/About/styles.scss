@@ -44,7 +44,15 @@
     flex-direction: column;
 
     &__image {
-      width: 300px;
+      width: 80%;
+    }
+
+    &__information {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 80vw;
     }
   }
 }

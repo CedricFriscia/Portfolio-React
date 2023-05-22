@@ -46,21 +46,32 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .landing {
     &__presentation h2 {
+      margin: auto;
       font-size: 2rem;
       letter-spacing: 5px;
-      width: 20rem;
+      width: 90vw;
       font-weight: 1000;
       padding-bottom: 15px;
       line-height: 1.2;
+    }
+
+    &__presentation aside {
+      width: 25rem;
+      width: 90vw;
+      padding-bottom: 15px;
     }
 
     &__main {
       display: flex;
       margin: 50px;
       flex-direction: column;
+    }
+
+    &__stack {
+      width: 90vw;
     }
   }
 }

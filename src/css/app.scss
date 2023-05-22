@@ -4,3 +4,9 @@
 .container {
   font-family: "Lato", sans-serif;
 }
+
+@media (max-width: 900px) {
+  .container {
+    overflow-x: hidden;
+  }
+}
